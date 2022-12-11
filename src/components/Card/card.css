@@ -1,0 +1,43 @@
+.card {
+  width: 20vw;
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  background-color: rgb(60, 60, 60);
+  cursor: pointer;
+}
+.opened {
+  width: 40vw;
+}
+.image {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info {
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: rgb(239, 239, 239);
+}
+.title {
+  text-align: center;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
