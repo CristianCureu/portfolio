@@ -41,3 +41,17 @@
   flex-direction: column;
   height: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 50vw;
+    height: 50vh;
+  }
+  .opened {
+    width: 90vw;
+    min-height: 55vh;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+}
