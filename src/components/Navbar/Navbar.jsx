@@ -3,6 +3,7 @@ import "./navbar.css";
 
 function Navbar() {
   const [logoOn, setLogoOn] = useState(true);
+  const [navActive, setNavActive] = useState(false);
 
   const onClickLogo = () => {
     setTimeout(() => {
@@ -18,14 +19,17 @@ function Navbar() {
           <img src="images/logoOFF.png" />
         )}
       </div>
-      <ul>
+      <ul className={navActive ? "nav-active" : ""}>
         <li>Projects</li>
         <li>About</li>
       </ul>
-      <div className="burger">
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+      <div
+        className={navActive ? "burger toggle" : "burger"}
+        onClick={() => setNavActive(!navActive)}
+      >
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
     </nav>
   );

@@ -18,6 +18,10 @@ nav ul {
 }
 nav ul li {
   cursor: pointer;
+  transition: navLinks 1s ease-in;
+}
+.nav-active {
+  transform: translate(0%);
 }
 
 nav .logo {
@@ -35,11 +39,14 @@ nav .logo img {
 
 .burger {
   display: none;
+  z-index: 4;
 }
 .burger div {
+  border-radius: 4px;
   width: 2.5rem;
   height: 3px;
   background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 480px) {
@@ -51,7 +58,20 @@ nav .logo img {
     margin-top: 1rem;
   }
   nav ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    font-size: 2rem;
+    background-color: rgb(139, 87, 87);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
   .burger {
     display: flex;
@@ -60,5 +80,14 @@ nav .logo img {
     justify-content: space-around;
     height: 5vh;
     width: 20%;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-50%, 60%);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-47%, -50%);
   }
 }
