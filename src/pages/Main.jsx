@@ -6,7 +6,7 @@ function Main() {
   return (
     <div className="main">
       <div className="bg">
-        <img src="images/bg.jpg" />
+        <img src="images/background.png" />
       </div>
       <h1 className="title">Developer</h1>
       <Navbar />

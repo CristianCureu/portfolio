@@ -54,4 +54,7 @@
   .title {
     margin-bottom: 1rem;
   }
+  .info {
+    max-height: 100%;
+  }
 }
