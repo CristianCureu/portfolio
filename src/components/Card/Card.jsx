@@ -38,7 +38,7 @@ function Card() {
         >
             <h2 className="title">Skills</h2>
             {skills.map((skill) => (
-              <div className="skills">
+              <div key={skill.name} className="skills">
                 <div>{skill.name}</div>
                 <ProgressBar completed={skill.value} />
               </div>

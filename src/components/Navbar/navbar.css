@@ -82,12 +82,12 @@ nav .logo img {
     width: 20%;
   }
   .toggle .line1 {
-    transform: rotate(-45deg) translate(-50%, 60%);
+    transform: rotate(45deg) translate(50%, 50%);
   }
   .toggle .line2 {
     opacity: 0;
   }
   .toggle .line3 {
-    transform: rotate(45deg) translate(-47%, -50%);
+    transform: rotate(135deg) translate(-50%, 50%);
   }
 }

@@ -1,18 +1,14 @@
 import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import "./navbar.css";
 
 function Navbar() {
   const [logoOn, setLogoOn] = useState(true);
   const [navActive, setNavActive] = useState(false);
 
-  const onClickLogo = () => {
-    setTimeout(() => {
-      setLogoOn(!logoOn);
-    }, 50);
-  };
   return (
     <nav>
-      <div className="logo" onClick={() => onClickLogo()}>
+      <div className="logo" onClick={() => setLogoOn(!logoOn)}>
         {logoOn ? (
           <img src="images/logoON.png" />
         ) : (
@@ -20,8 +16,16 @@ function Navbar() {
         )}
       </div>
       <ul className={navActive ? "nav-active" : ""}>
-        <li>Projects</li>
-        <li>About</li>
+        <HashLink
+          to="#projects"
+          smooth
+          onClick={() => setNavActive(!navActive)}
+        >
+          Projects
+        </HashLink>
+        <HashLink to="#about" smooth>
+          About
+        </HashLink>
       </ul>
       <div
         className={navActive ? "burger toggle" : "burger"}
