@@ -36,7 +36,7 @@ function Card() {
           transition={{ duration: 1.7 }}
           className="info"
         >
-            <h2 className="title">Skills</h2>
+            <h2>Skills</h2>
             {skills.map((skill) => (
               <div key={skill.name} className="skills">
                 <div>{skill.name}</div>

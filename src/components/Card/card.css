@@ -8,6 +8,7 @@
   margin: 1rem;
   background-color: rgb(60, 60, 60);
   cursor: pointer;
+  z-index: 1;
 }
 .opened {
   width: 40vw;
@@ -33,13 +34,14 @@
   padding-right: 1rem;
   color: rgb(239, 239, 239);
 }
-.title {
-  text-align: center;
-}
+
 .skills {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.card h2 {
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {

@@ -1,17 +1,17 @@
+import "../pages.css";
 import Card from "../../components/Card/Card";
-import Navbar from "../../components/Navbar/Navbar";
-import "./main.css";
+import { motion as m } from "framer-motion";
 
 function Main() {
   return (
-    <div className="main">
-      <Navbar />
+    <m.div
+      initial={{ y: "100%" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="main"
+    >
       <Card />
-      <h1 className="title">Developer</h1>
-      <div className="bg">
-        <img src="images/background.png" />
-      </div>
-    </div>
+    </m.div>
   );
 }
 

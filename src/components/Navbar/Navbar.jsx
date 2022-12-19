@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { HashLink } from "react-router-hash-link";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 
 function Navbar() {
   const [logoOn, setLogoOn] = useState(true);
   const [navActive, setNavActive] = useState(false);
+  const location = useLocation();
+  console.log(location.pathname);
 
   return (
     <nav>
@@ -16,16 +18,15 @@ function Navbar() {
         )}
       </div>
       <ul className={navActive ? "nav-active" : ""}>
-        <HashLink
-          to="#projects"
-          smooth
-          onClick={() => setNavActive(!navActive)}
-        >
+        <Link to="/" onClick={() => setNavActive(!navActive)}>
+          Home
+        </Link>
+        <Link to="/projects" onClick={() => setNavActive(!navActive)}>
           Projects
-        </HashLink>
-        <HashLink to="#about" smooth>
+        </Link>
+        <Link to="/about" onClick={() => setNavActive(!navActive)}>
           About
-        </HashLink>
+        </Link>
       </ul>
       <div
         className={navActive ? "burger toggle" : "burger"}
