@@ -7,6 +7,7 @@ const skills = [
   { name: "HTML", value: 100 },
   { name: "CSS", value: 100 },
   { name: "JavaScript", value: 90 },
+  { name: "Node.js", value: 80 },
   { name: "C#", value: 50 },
   { name: "React", value: 80 },
   { name: "Angular", value: 40 },

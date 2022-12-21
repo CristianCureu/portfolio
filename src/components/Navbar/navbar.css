@@ -17,9 +17,8 @@ nav ul {
   list-style: none;
   color: white;
 }
-nav ul li {
+nav ul a {
   cursor: pointer;
-  transition: navLinks 1s ease-in;
 }
 .nav-active {
   transform: translate(0%);
@@ -48,6 +47,20 @@ nav .logo img {
   height: 3px;
   background-color: rgb(255, 255, 255);
   transition: all 0.3s ease;
+}
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active {
+  position: absolute;
+  bottom: -25%;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 480px) {
