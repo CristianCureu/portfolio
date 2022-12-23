@@ -47,7 +47,7 @@
 @media screen and (max-width: 480px) {
   .card {
     width: 50vw;
-    height: 50vh;
+    min-height: 50vh;
   }
   .opened {
     width: 90vw;
@@ -58,5 +58,8 @@
   }
   .info {
     max-height: 100%;
+  }
+  .skills {
+    font-size: 0.8rem;
   }
 }
