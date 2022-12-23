@@ -1,13 +1,18 @@
 import "./navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion as m } from "framer-motion";
 
 function Navbar() {
-  const [logoOn, setLogoOn] = useState(true);
+  const [logoOn, setLogoOn] = useState(false);
   const [navActive, setNavActive] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLogoOn(!logoOn);
+    }, [2000]);
+  }, []);
   return (
     <m.nav>
       <div className="logo" onClick={() => setLogoOn(!logoOn)}>

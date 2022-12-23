@@ -11,6 +11,34 @@ function Main() {
       className="main"
     >
       <Card />
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="icons"
+      >
+        <div className="icon">
+          <m.a
+            initial={{ y: "100%" }}
+            animate={{ y: "0%" }}
+            transition={{ delay: 0.5, ease: "easeOut" }}
+            href="https://github.com/CristianCureu"
+            target="_blank"
+          >
+            <img src="images/git.png" />
+          </m.a>
+        </div>
+        <div className="icon">
+          <m.a
+            initial={{ y: "100%" }}
+            animate={{ y: "0%" }}
+            transition={{ delay: 0.8, ease: "easeOut" }}
+            href="https://www.linkedin.com/in/cristian-cureu-971580212/"
+            target="_blank"
+          >
+            <img src="images/linkedin.png" />
+          </m.a>
+        </div>
+      </m.div>
     </m.div>
   );
 }
