@@ -24,7 +24,7 @@ function Main() {
             href="https://github.com/CristianCureu"
             target="_blank"
           >
-            <img src="images/git.png" />
+            <img src="images/git.png" alt="Cristian Cureu Github Profile" />
           </m.a>
         </div>
         <div className="icon">
@@ -35,7 +35,7 @@ function Main() {
             href="https://www.linkedin.com/in/cristian-cureu-971580212/"
             target="_blank"
           >
-            <img src="images/linkedin.png" />
+            <img src="images/linkedin.png" alt="Cristian Cureu Linkedin Profile" />
           </m.a>
         </div>
       </m.div>
