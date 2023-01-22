@@ -28,7 +28,7 @@ function Card() {
         layout
         className="image"
       >
-        <img style={{ borderRadius: "8px" }} src="./images/me.jpg" alt="me" />
+        <img style={{ borderRadius: "8px" }} src="./images/me.jpg" alt="Cristian Cureu" />
       </motion.div>
       {isOpen && (
         <motion.div
