@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+.projects {
+  justify-content: space-evenly;
+  height: 90vh;
+  margin-top: 10vh;
+}
 h1 {
   position: absolute;
   top: 90%;
@@ -17,9 +22,15 @@ h1 {
   font-size: 10rem;
 }
 
-.title {
+.title,
+.description,
+.note {
   overflow: hidden;
   color: white;
+}
+.description {
+  width: 30%;
+  text-align: center;
 }
 
 .icons {
@@ -46,6 +57,40 @@ h1 {
 }
 .icon img {
   width: 100%;
+}
+
+.projects-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.projects-image {
+  width: 15%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects-image:hover {
+  transform: scale(1.1);
+}
+
+.note {
+  font-size: 10px;
+  color: white;
+}
+
+.description-about {
+  color: white;
+  width: 70%;
+  text-align: center;
+  margin-top: 10vh;
+  overflow: hidden;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 480px) {
