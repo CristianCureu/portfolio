@@ -27,8 +27,7 @@ function About() {
           I am currently working at Indeco Soft as a React Native developer. My
           last work experience was at Faro Development. I worked as a web
           developer intern for three and a half months with React.js,
-          Express.js, MongoDB, Gitlab, Firebase to develop a web application
-          based on scanning qr codes for a festival. Last year I also had a work
+          Express.js, MongoDB, Gitlab, Firebase. Last year I also had a work
           experience at Indeco Soft, as part of an internship.
           Besides work experience, I studied at the "Universitatea Tehnica Cluj
           Napoca" and I have a bachelor's degree in computer science. As a

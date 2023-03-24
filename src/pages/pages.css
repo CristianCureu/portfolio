@@ -122,4 +122,11 @@ h1 {
     height: 55%;
     width: 50%;
   }
+  .description-about {
+    font-size: 0.9rem;
+  }
+  .about {
+    height: 90vh;
+    margin-top: 10vh;
+  }
 }
